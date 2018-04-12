@@ -20,7 +20,7 @@ public class Main extends selections {
 
         selections choices = new selections();
         choices.selections();
-        
+
         //Scanner to ask for user input
         Scanner Question = new Scanner(System.in);
        String answer = Question.next();
