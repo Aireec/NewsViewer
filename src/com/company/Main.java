@@ -5,7 +5,7 @@ import java.net.URI;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main {
+public class Main extends selections {
 
     public Main() {
     }
@@ -18,18 +18,9 @@ public class Main {
         //Ask while news
         System.out.println("Which news would you like to see");
 
-        //Array list of choices
-        ArrayList<String> Choices = new ArrayList();
-        Choices.add("Sport");
-        Choices.add("Crime");
-        Choices.add("Gaming");
-        Choices.add("Politics");
-        Choices.add("Celebrity");
-
-        //List choices
-        for (int i = 0; i < Choices.size(); i++) {
-            System.out.println("Choices are : " + Choices.get(i));
-        }
+        selections choices = new selections();
+        choices.selections();
+        
         //Scanner to ask for user input
         Scanner Question = new Scanner(System.in);
        String answer = Question.next();
